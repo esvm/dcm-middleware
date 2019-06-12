@@ -1,0 +1,38 @@
+version: "2.1"
+services:
+  scylla:
+    container_name: "scylla"
+    image: "scylladb/scylla"
+    ports:
+      - "9042:9042"
+    environment:
+      BROADCAST-ADDRESS: "127.0.0.1"
+      LISTEN-ADDRESS: "0.0.0.0"
+      BROADCAST-RPC-ADDRESS: "127.0.0.1"
+    volumes: 
+      - ./migrations:/migrations
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh"]
+      interval: 5s
+      timeout: 3s
+      retries: 6
+  redis:
+    container_name: "redis"
+    image: "redis:5.0.5-alpine"
+    ports:
+      - "6379:6379"
+  broker: 
+    container_name: "broker"
+    image: "middleware-broker:1.0.0"
+    environment:
+      SERVER_PORT: 8426
+      LOG_LEVEL: "DEBUG"
+      SCYLLA_HOST: "scylla"
+    ports: 
+      - "8426:8426"
+    links: 
+      - "scylla"
+    depends_on:
+      scylla:
+        condition: service_healthy
+    
