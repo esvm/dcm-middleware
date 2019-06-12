@@ -9,8 +9,6 @@ services:
       BROADCAST-ADDRESS: "127.0.0.1"
       LISTEN-ADDRESS: "0.0.0.0"
       BROADCAST-RPC-ADDRESS: "127.0.0.1"
-    volumes: 
-      - ./migrations:/migrations
     healthcheck:
       test: ["CMD-SHELL", "cqlsh"]
       interval: 5s
@@ -18,7 +16,7 @@ services:
       retries: 6
   broker: 
     container_name: "broker"
-    image: "middleware-broker:1.0.0"
+    image: "esvm/middleware-broker"
     environment:
       SERVER_PORT: 8426
       LOG_LEVEL: "DEBUG"
