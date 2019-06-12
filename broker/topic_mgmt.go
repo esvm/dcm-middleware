@@ -3,8 +3,8 @@ package broker
 import (
 	"strings"
 
-	"github.com/dwsb/projetomiddleware/broker/daos"
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	"github.com/esvm/dcm-middleware/broker/daos"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	log "github.com/sirupsen/logrus"
 )
 

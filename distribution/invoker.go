@@ -3,8 +3,8 @@ package distribution
 import (
 	"net"
 
-	"github.com/dwsb/projetomiddleware/distribution/models"
-	ifs "github.com/dwsb/projetomiddleware/infrastructure"
+	"github.com/esvm/dcm-middleware/distribution/models"
+	ifs "github.com/esvm/dcm-middleware/infrastructure"
 	log "github.com/sirupsen/logrus"
 )
 

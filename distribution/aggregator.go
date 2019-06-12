@@ -3,7 +3,7 @@ package distribution
 import (
 	"errors"
 
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	"github.com/montanaflynn/stats"
 )
 

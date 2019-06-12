@@ -4,8 +4,8 @@ import (
 	"encoding/gob"
 	"os"
 
-	"github.com/dwsb/projetomiddleware/broker"
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	"github.com/esvm/dcm-middleware/broker"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	log "github.com/sirupsen/logrus"
 )
 

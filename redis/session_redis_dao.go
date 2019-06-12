@@ -3,7 +3,7 @@ package redis
 import (
 	"os"
 
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	"github.com/go-redis/redis"
 	log "github.com/sirupsen/logrus"
 )

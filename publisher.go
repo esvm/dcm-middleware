@@ -4,9 +4,9 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	"github.com/dwsb/projetomiddleware/dcm"
-	"github.com/dwsb/projetomiddleware/distribution/models"
-	"github.com/dwsb/projetomiddleware/scylla"
+	"github.com/esvm/dcm-middleware/dcm"
+	"github.com/esvm/dcm-middleware/distribution/models"
+	"github.com/esvm/dcm-middleware/scylla"
 	log "github.com/sirupsen/logrus"
 )
 

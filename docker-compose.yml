@@ -16,11 +16,6 @@ services:
       interval: 5s
       timeout: 3s
       retries: 6
-  redis:
-    container_name: "redis"
-    image: "redis:5.0.5-alpine"
-    ports:
-      - "6379:6379"
   broker: 
     container_name: "broker"
     image: "middleware-broker:1.0.0"

@@ -1,8 +1,8 @@
 package daos
 
 import (
-	"github.com/dwsb/projetomiddleware/distribution/models"
-	"github.com/dwsb/projetomiddleware/scylla"
+	"github.com/esvm/dcm-middleware/distribution/models"
+	"github.com/esvm/dcm-middleware/scylla"
 )
 
 type TopicDao interface {

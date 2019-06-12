@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	"github.com/gocql/gocql"
 	uuid "github.com/satori/go.uuid"
 	log "github.com/sirupsen/logrus"

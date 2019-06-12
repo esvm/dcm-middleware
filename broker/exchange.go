@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	dst "github.com/dwsb/projetomiddleware/distribution"
-	"github.com/dwsb/projetomiddleware/distribution/models"
+	dst "github.com/esvm/dcm-middleware/distribution"
+	"github.com/esvm/dcm-middleware/distribution/models"
 	log "github.com/sirupsen/logrus"
 )
 
