@@ -1,7 +1,5 @@
 FROM golang:1.11
 
-LABEL maintainer="Luiz Reis <lrnn@cin.ufpe.br>"
-
 ENV GOOS=linux
 
 WORKDIR $GOPATH/src/broker
@@ -12,6 +10,6 @@ ENV GO111MODULE=on
 
 RUN go mod download
 RUN go build
-RUN chmod +x ./projetomiddleware
+RUN chmod +x ./dcm-middleware
 
-CMD ["./projetomiddleware"]
+CMD ["./dcm-middleware"]
