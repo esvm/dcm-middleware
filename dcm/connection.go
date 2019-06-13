@@ -45,7 +45,10 @@ func (conn *Connection) Publish(topicID string, message *models.Message) error {
 		}
 
 		response := <-chRes
-		return errors.New(response.Error())
+		if response.Error() != "" {
+			return errors.New(response.Error())
+		}
+
 	}
 
 	return nil
