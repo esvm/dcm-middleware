@@ -8,8 +8,8 @@ COPY . .
 
 ENV GO111MODULE=on
 
-RUN go mod download
-RUN go build
+RUN go mod vendor
+RUN go build -mod=vendor
 RUN chmod +x ./dcm-middleware
 
 CMD ["./dcm-middleware"]
